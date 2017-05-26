@@ -11,6 +11,16 @@ class PatternsServiceProvider extends ServiceProvider {
 	 */
 	protected $defer = false;
 
+  /**
+   * Bootstrap the application events.
+   *
+   * @return void
+   */
+  public function boot()
+  {
+    //$this->package('domain/patterns');
+  }
+
 	/**
 	 * Register the service provider.
 	 *
@@ -18,7 +28,7 @@ class PatternsServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+
 	}
 
 	/**
@@ -28,7 +38,7 @@ class PatternsServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return ['patterns'];
 	}
 
 }

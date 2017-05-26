@@ -1,4 +1,4 @@
-<?php namespace Domain\Patterns\Tests\Behavioural\Strategy;
+<?php namespace Domain\Patterns\Behavioural\Strategy;
 
 use Domain\Patterns\Behavioural\Strategy\OutputInterface;
 
