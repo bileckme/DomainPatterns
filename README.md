@@ -1,5 +1,5 @@
 # Domain Patterns
-Implement Design Patterns from a domain perspective.
+Implementing Design Patterns from a Domain perspective.
 
 ## Credits
 - Biyi Akinpelu (Developer)
