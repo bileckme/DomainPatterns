@@ -21,12 +21,17 @@ class RunTest extends Test
 
   protected $client;
 
+  protected $mockOutput;
+
   /**
    * before tests run
    */
   protected function _before()
   {
     $this->client = new Client();
+    $this->mockOutput = $this->getMockBuilder(OutputInterface::class)
+                             ->disableOriginalConstructor()
+                             ->getMock();
   }
 
   /**
@@ -42,10 +47,6 @@ class RunTest extends Test
    */
   public function testStrategyPattern()
   {
-    $this->mockOutput = $this->getMockBuilder(OutputInterface::class)
-                             ->disableOriginalConstructor()
-                             ->getMock();
-
     $this->assertInstanceOf(OutputInterface::class, $this->mockOutput);
     $this->client->setOutput($this->mockOutput);
     $this->assertNull($this->client->loadOutput());

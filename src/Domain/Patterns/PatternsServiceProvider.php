@@ -18,7 +18,7 @@ class PatternsServiceProvider extends ServiceProvider {
    */
   public function boot()
   {
-    //$this->package('domain/patterns');
+    $this->package('domain/patterns');
   }
 
 	/**
@@ -28,7 +28,7 @@ class PatternsServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-
+    $this->registerStrategyPattern();
 	}
 
 	/**
@@ -41,4 +41,9 @@ class PatternsServiceProvider extends ServiceProvider {
 		return ['patterns'];
 	}
 
+	protected function registerStrategyPattern()
+  {
+    $this->app->bind('Domain\Patterns\Behavioural\Strategy\OutputInterface',
+                     'Domain\Patterns\Behavioural\Strategy\BaseOutputgi');
+  }
 }
