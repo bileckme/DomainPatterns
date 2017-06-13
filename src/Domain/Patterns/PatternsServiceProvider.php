@@ -1,5 +1,6 @@
 <?php namespace Domain\Patterns;
 
+use Domain\Patterns\Behavioural\Strategy\BaseOutput;
 use Illuminate\Support\ServiceProvider;
 
 class PatternsServiceProvider extends ServiceProvider {
@@ -41,9 +42,11 @@ class PatternsServiceProvider extends ServiceProvider {
 		return ['patterns'];
 	}
 
-	protected function registerStrategyPattern()
+  /**
+   * Registers the Strategy Pattern
+   */
+  protected function registerStrategyPattern()
   {
-    $this->app->bind('Domain\Patterns\Behavioural\Strategy\OutputInterface',
-                     'Domain\Patterns\Behavioural\Strategy\BaseOutputgi');
+    $this->app->bind('Domain\Patterns\Behavioural\Strategy\OutputInterface', BaseOutput::class);
   }
 }

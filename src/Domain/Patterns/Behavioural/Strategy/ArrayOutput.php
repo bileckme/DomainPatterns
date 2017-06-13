@@ -1,9 +1,15 @@
 <?php namespace Domain\Patterns\Behavioural\Strategy;
 
-class ArrayOutput implements OutputInterface
+class ArrayOutput extends BaseOutput
 {
-  public function load()
-  {
-    return $arrayOfData;
-  }
+    protected $data = [];
+
+    public function set(array $data){
+      $this->data = $data;
+    }
+
+    public function load()
+    {
+        return $this->data;
+    }
 }

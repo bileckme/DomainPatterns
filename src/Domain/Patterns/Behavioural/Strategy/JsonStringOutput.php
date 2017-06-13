@@ -1,9 +1,30 @@
 <?php namespace Domain\Patterns\Behavioural\Strategy;
 
-class JsonStringOutput implements OutputInterface
+/**
+ * Class JsonStringOutput
+ * @package Domain\Patterns\Behavioural\Strategy
+ */
+class JsonStringOutput extends BaseOutput
 {
-    public function load()
-    {
-        return json_encode($arrayOfData);
-    }
+  /**
+   * @var array $data
+   */
+  protected $data = [];
+
+  /**
+   * Sets data
+   * @param array $data
+   */
+  public function set(array $data){
+      $this->data = $data;
+  }
+
+  /**
+   * Loads the data
+   * @return string
+   */
+  public function load()
+  {
+      return json_encode($this->data);
+  }
 }
