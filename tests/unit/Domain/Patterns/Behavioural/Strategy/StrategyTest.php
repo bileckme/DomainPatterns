@@ -10,10 +10,10 @@ use Codeception\TestCase\Test;
 use Mockery\Mock;
 
 /**
- * Class RunTest
+ * Class StrategyTest
  * @package Domain\Patterns\Tests\Behavioural\Strategy
  */
-class RunTest extends Test
+class StrategyTest extends Test
 {
     /**
    * @var \UnitTester
