@@ -1,15 +1,22 @@
 <?php namespace Domain\Patterns\Behavioural\CoR;
 
+use Domain\Patterns\Behavioural\CoR\RequestInterface as Request;
 /**
- * Class BaseHandler
+ * Class Handler
  * @package Domain\Patterns\Behavioural\CoR
  */
-abstract class BaseHandler
+abstract class Handler
 {
     /**
    * @var Handler
    */
   private $successor = null;
+
+  public function __construct(Handler $handler = null)
+  {
+
+    $this->successor = $handler;
+  }
 
   /**
    * Sets a successor handler,
@@ -33,7 +40,7 @@ abstract class BaseHandler
    * @param string|array $request
    * @return string
    */
-  final public function handle($request)
+  final public function handle(Request $request)
   {
       $response = $this->process($request);
       if (($response === null) && ($this->successor !== null)) {
@@ -51,5 +58,5 @@ abstract class BaseHandler
    * @param $request
    * @return null|mixed
    */
-  abstract protected function process($request);
+  abstract protected function process(Request $request);
 }

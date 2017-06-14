@@ -1,17 +1,22 @@
 <?php namespace Domain\Patterns\Behavioural\CoR;
 
+use Domain\Patterns\Behavioural\CoR\RequestInterface as Request;
 /**
  * Class AdvanceHandler
  * @package Domain\Patterns\Behavioural\CoR
  */
 abstract class AdvancedHandler
 {
+  /**
+   * @var
+   */
+  protected $cache;
 
   /**
    * @param $request
    * @return mixed
    */
-  final public function handle($request)
+  final public function handle(Request $request)
   {
       $response = $this->cache->getResponse($request);
       if ($response === null) {
@@ -25,7 +30,7 @@ abstract class AdvancedHandler
    * @param $request
    * @return mixed
    */
-  final public function handleRequestWithChain($request)
+  final public function handleRequestWithChain(Request $request)
   {
       $response = $this->process($request);
       if (($response === null) && ($this->successor !== null)) {
