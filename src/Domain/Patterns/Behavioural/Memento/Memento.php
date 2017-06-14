@@ -8,6 +8,11 @@ class Memento
 {
   private $state;
 
+  public function __construct($state)
+  {
+    $this->setState($state);
+  }
+
   /**
    * @return mixed
    */
