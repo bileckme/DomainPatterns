@@ -6,5 +6,10 @@
  */
 interface ObserverInterface
 {
-    public function update(Subject $subjectState);
+    /**
+     * Update state
+     * @param Subject $state
+     * @return mixed
+     */
+    public function update(Subject $state);
 }
