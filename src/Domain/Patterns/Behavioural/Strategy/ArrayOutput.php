@@ -4,8 +4,9 @@ class ArrayOutput extends BaseOutput
 {
     protected $data = [];
 
-    public function set(array $data){
-      $this->data = $data;
+    public function set(array $data)
+    {
+        $this->data = $data;
     }
 
     public function load()

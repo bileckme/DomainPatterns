@@ -1,4 +1,5 @@
 <?php namespace Domain\Patterns\Tests\Behavioural\Strategy;
+
 use Domain\Patterns\Behavioural\Strategy\ArrayOutput;
 use Domain\Patterns\Behavioural\Strategy\BaseOutput;
 use Domain\Patterns\Behavioural\Strategy\OutputInterface;
@@ -14,22 +15,22 @@ use Mockery\Mock;
  */
 class RunTest extends Test
 {
-  /**
+    /**
    * @var \UnitTester
    */
   protected $tester;
 
-  protected $client;
+    protected $client;
 
-  protected $mockOutput;
+    protected $mockOutput;
 
   /**
    * before tests run
    */
   protected function _before()
   {
-    $this->client = new Client();
-    $this->mockOutput = $this->getMockBuilder(OutputInterface::class)
+      $this->client = new Client();
+      $this->mockOutput = $this->getMockBuilder(OutputInterface::class)
                              ->disableOriginalConstructor()
                              ->getMock();
   }
@@ -39,7 +40,6 @@ class RunTest extends Test
    */
   protected function _after()
   {
-
   }
 
   /**
@@ -47,26 +47,26 @@ class RunTest extends Test
    */
   public function testStrategyPattern()
   {
-    $this->assertInstanceOf(OutputInterface::class, $this->mockOutput);
-    $this->client->setOutput($this->mockOutput);
-    $this->assertNull($this->client->loadOutput());
+      $this->assertInstanceOf(OutputInterface::class, $this->mockOutput);
+      $this->client->setOutput($this->mockOutput);
+      $this->assertNull($this->client->loadOutput());
 
     // Want an array?
     $array = new ArrayOutput();
-    $array->set([1, 2, 3, 4]);
-    $this->client->setOutput($array);
-    $this->assertInternalType('array',$this->client->loadOutput());
+      $array->set([1, 2, 3, 4]);
+      $this->client->setOutput($array);
+      $this->assertInternalType('array', $this->client->loadOutput());
 
     // Want a JSON ?
     $json = new JsonStringOutput();
-    $json->set([2,3,4,5]);
-    $this->client->setOutput($json);
-    $this->assertInternalType('string', $this->client->loadOutput());
+      $json->set([2,3,4,5]);
+      $this->client->setOutput($json);
+      $this->assertInternalType('string', $this->client->loadOutput());
 
     // Want a serialized array
     $serial = new SerializedArrayOutput();
-    $serial->set([2,3,4,5]);
-    $this->client->setOutput($serial);
-    $this->assertInternalType('string', $this->client->loadOutput());
+      $serial->set([2,3,4,5]);
+      $this->client->setOutput($serial);
+      $this->assertInternalType('string', $this->client->loadOutput());
   }
 }

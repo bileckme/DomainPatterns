@@ -8,7 +8,7 @@ use Domain\Patterns\Behavioural\Strategy\OutputInterface as Output;
  */
 abstract class BaseOutput implements Output
 {
-  /**
+    /**
    * @var $data
    */
   protected $data = [];
@@ -18,6 +18,6 @@ abstract class BaseOutput implements Output
    */
   public function load()
   {
-    return $this->data;
+      return $this->data;
   }
 }

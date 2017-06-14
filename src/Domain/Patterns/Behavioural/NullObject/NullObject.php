@@ -6,10 +6,10 @@
  */
 class NullObject extends BaseObject
 {
-  /**
+    /**
    * does nothing
    */
-  public function nullMethod(){
-
+  public function nullMethod()
+  {
   }
 }

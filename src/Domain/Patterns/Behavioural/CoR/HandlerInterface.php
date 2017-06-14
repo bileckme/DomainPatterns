@@ -6,7 +6,7 @@
  */
 interface HandlerInterface
 {
-  /**
+    /**
    * @param BaseHandler $handler
    * @return mixed
    */
@@ -17,5 +17,4 @@ interface HandlerInterface
    * @return mixed
    */
   public function handle($request);
-
 }

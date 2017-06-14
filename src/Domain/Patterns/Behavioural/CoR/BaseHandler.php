@@ -6,7 +6,7 @@
  */
 abstract class BaseHandler
 {
-  /**
+    /**
    * @var Handler
    */
   private $successor = null;
@@ -17,12 +17,13 @@ abstract class BaseHandler
    *
    * @param Handler $handler
    */
-  public function setSuccessor(Handler $handler){
-    if ($this->succesor === null){
-      $this->successor = $handler;
-    } else {
-      $this->successor->setSuccessor($handler);
-    }
+  public function setSuccessor(Handler $handler)
+  {
+      if ($this->succesor === null) {
+          $this->successor = $handler;
+      } else {
+          $this->successor->setSuccessor($handler);
+      }
   }
 
   /**
@@ -34,12 +35,12 @@ abstract class BaseHandler
    */
   final public function handle($request)
   {
-    $response = $this->process($request);
-    if (($response === null) && ($this->successor !== null)) {
-      $response = $this->successor->handle($request);
-    }
+      $response = $this->process($request);
+      if (($response === null) && ($this->successor !== null)) {
+          $response = $this->successor->handle($request);
+      }
 
-    return $response;
+      return $response;
   }
 
   /**
@@ -52,4 +53,3 @@ abstract class BaseHandler
    */
   abstract protected function process($request);
 }
-

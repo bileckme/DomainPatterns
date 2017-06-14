@@ -6,5 +6,4 @@
  */
 class BaseObject extends Object
 {
-
 }

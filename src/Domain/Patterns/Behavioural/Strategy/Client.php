@@ -8,14 +8,14 @@ use Domain\Patterns\Behavioural\Strategy\OutputInterface;
  */
 class Client
 {
-  private $output;
+    private $output;
 
   /**
    * @param OutputInterface $outputType
    */
   public function setOutput(OutputInterface $outputType)
   {
-    $this->output = $outputType;
+      $this->output = $outputType;
   }
 
   /**
@@ -23,6 +23,6 @@ class Client
    */
   public function loadOutput()
   {
-    return $this->output->load();
+      return $this->output->load();
   }
 }

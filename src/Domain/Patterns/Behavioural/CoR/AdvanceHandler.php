@@ -13,12 +13,12 @@ abstract class AdvancedHandler
    */
   final public function handle($request)
   {
-    $response = $this->cache->getResponse($request);
-    if ($response === null) {
-      $response = $this->handleRequestWithChain($request);
-    }
+      $response = $this->cache->getResponse($request);
+      if ($response === null) {
+          $response = $this->handleRequestWithChain($request);
+      }
 
-    return $response;
+      return $response;
   }
 
   /**
@@ -27,13 +27,12 @@ abstract class AdvancedHandler
    */
   final public function handleRequestWithChain($request)
   {
-    $response = $this->process($request);
-    if (($response === null) && ($this->successor !== null)) {
-      $response = $this->successor->handleRequestWithChain($request);
-    }
-    $this->cache->setResponse($response);
+      $response = $this->process($request);
+      if (($response === null) && ($this->successor !== null)) {
+          $response = $this->successor->handleRequestWithChain($request);
+      }
+      $this->cache->setResponse($response);
 
-    return $response;
+      return $response;
   }
-
 }

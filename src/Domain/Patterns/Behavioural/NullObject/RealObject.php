@@ -6,9 +6,8 @@
  */
 class RealObject extends Object
 {
-
-  public function reflection(){
-    return get_class(RealObject::class);
-  }
-
+    public function reflection()
+    {
+        return get_class(RealObject::class);
+    }
 }

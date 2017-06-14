@@ -6,7 +6,7 @@
  */
 abstract class AbstractExpression
 {
-  /**
+    /**
    * @var Client
    */
   public $client;

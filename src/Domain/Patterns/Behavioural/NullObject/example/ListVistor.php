@@ -4,7 +4,8 @@
  * Interface ListVisitor
  * @package Domain\Patterns\Behavioural\NullObject
  */
-interface ListVisitor {
+interface ListVisitor
+{
 
   /**
    * @param NonNullList $host

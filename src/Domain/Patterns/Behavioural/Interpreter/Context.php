@@ -6,10 +6,8 @@
  */
 class Context
 {
-  /**
+    /**
    * @var Client
    */
   public $client;
-
-
 }

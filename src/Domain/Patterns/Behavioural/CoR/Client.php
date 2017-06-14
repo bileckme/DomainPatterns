@@ -1,19 +1,18 @@
 <?php namespace Domain\Patterns\Behavioural\CoR;
 
-class Client {
+class Client
+{
+    private $parentHandler;
 
-  private $parentHandler;
+    public function setChainOrder($handlersOrder)
+    {
+        // code to setup the chain
+    }
 
-  public function setChainOrder($handlersOrder)
-  {
-    // code to setup the chain
-  }
+    public function process($request)
+    {
+        $response = $this->parentHandler->handle($request);
 
-  public function process($request)
-  {
-    $response = $this->parentHandler->handle($request);
-
-    return $response;
-  }
-
+        return $response;
+    }
 }

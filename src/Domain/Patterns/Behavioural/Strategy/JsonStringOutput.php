@@ -6,7 +6,7 @@
  */
 class JsonStringOutput extends BaseOutput
 {
-  /**
+    /**
    * @var array $data
    */
   protected $data = [];
@@ -15,7 +15,8 @@ class JsonStringOutput extends BaseOutput
    * Sets data
    * @param array $data
    */
-  public function set(array $data){
+  public function set(array $data)
+  {
       $this->data = $data;
   }
 

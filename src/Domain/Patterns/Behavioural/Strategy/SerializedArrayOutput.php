@@ -6,14 +6,15 @@
  */
 class SerializedArrayOutput extends BaseOutput
 {
-  protected $data = [];
+    protected $data = [];
 
   /**
    * Sets data
    * @param array $data
    */
-  public function set(array $data){
-    $this->data = $data;
+  public function set(array $data)
+  {
+      $this->data = $data;
   }
 
   /**

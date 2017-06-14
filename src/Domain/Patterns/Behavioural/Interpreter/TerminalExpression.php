@@ -13,7 +13,7 @@ class TerminalExpression extends AbstractExpression
    */
   public function interpret(Context $context)
   {
-    // TODO: Implement a terminal expression
+      // TODO: Implement a terminal expression
     // Output an expression in format matching the above-mentioned context
   }
 }

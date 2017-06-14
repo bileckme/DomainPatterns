@@ -8,7 +8,7 @@ use Domain\Patterns\Behavioural\NullObject\Lists;
  * @package Domain\Patterns\Behavioural\NullObject
  */class NonNullList extends Lists
 {
-  /**
+    /**
    * @var $head
    */
   private $head;
@@ -25,8 +25,8 @@ use Domain\Patterns\Behavioural\NullObject\Lists;
    */
   public function __construct(Object $head, Lists $tail)
   {
-    $this->head = $head;
-    $this->tail = $tail;
+      $this->head = $head;
+      $this->tail = $tail;
   }
 
   /**
@@ -35,8 +35,9 @@ use Domain\Patterns\Behavioural\NullObject\Lists;
    * @internal mixed
    * @return mixed
    */
-  public function getHead() {
-    return $this->head;
+  public function getHead()
+  {
+      return $this->head;
   }
 
   /**
@@ -44,8 +45,9 @@ use Domain\Patterns\Behavioural\NullObject\Lists;
    *
    * @return List
    */
-  public function getTail() {
-    return $this->tail;
+  public function getTail()
+  {
+      return $this->tail;
   }
 
   /**
@@ -53,7 +55,8 @@ use Domain\Patterns\Behavioural\NullObject\Lists;
    * @param Object $param
    * @return mixed
    */
-  public function accept(ListVisitor $visitor, Object $param) {
-    return $visitor->whenNonNullList($this, $param);
+  public function accept(ListVisitor $visitor, Object $param)
+  {
+      return $visitor->whenNonNullList($this, $param);
   }
 }
