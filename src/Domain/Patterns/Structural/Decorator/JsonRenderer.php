@@ -11,7 +11,7 @@ class JsonRenderer extends RendererDecorator
    * Render the data
    * @return string
    */
-  public function renderData(): string
+  public function renderData()
   {
     return json_encode($this->wrapped->renderData());
   }

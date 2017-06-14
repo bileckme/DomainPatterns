@@ -10,5 +10,5 @@ interface RenderableInterface
    * Render the data
    * @return string
    */
-  public function renderData(): string;
+  public function renderData();
 }

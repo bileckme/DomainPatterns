@@ -15,7 +15,7 @@ class XmlRenderer extends RendererDecorator
    * Render the data
    * @return string
    */
-  public function renderData(): string
+  public function renderData()
   {
     $document = new \DOMDocument();
     $data = $this->wrapped->renderData();

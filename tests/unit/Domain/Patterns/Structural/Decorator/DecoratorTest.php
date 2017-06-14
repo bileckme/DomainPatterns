@@ -3,6 +3,7 @@
 use Domain\Patterns\Structural\Decorator\Webservice;
 use Domain\Patterns\Structural\Decorator\JsonRenderer;
 use Domain\Patterns\Structural\Decorator\XmlRenderer;
+use Codeception\TestCase\Test;
 
 /**
  * Class DecoratorTest
