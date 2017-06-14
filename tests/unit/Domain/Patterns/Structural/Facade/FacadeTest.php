@@ -6,6 +6,10 @@ use Domain\Patterns\Structural\Facade\BiosInterface;
 use Codeception\TestCase\Test;
 use Mockery\Mock;
 
+/**
+ * Class FacadeTest
+ * @package Domain\Patterns\Tests\Structural\Facade
+ */
 class FacadeTest extends Test
 {
   protected $os;

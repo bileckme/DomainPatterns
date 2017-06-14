@@ -1,5 +1,6 @@
 <?php namespace Domain\Patterns\Tests\Behavioural\CoR;
 
+use Codeception\TestCase\Test;
 /**
  * Class RunTest
  * @package Domain\Patterns\Tests\Behavioural\CoR
