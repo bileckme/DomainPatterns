@@ -40,7 +40,6 @@ class StrategyTest extends Test
    */
   protected function _after()
   {
-
   }
 
   /**

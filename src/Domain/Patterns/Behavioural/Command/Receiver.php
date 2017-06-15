@@ -6,7 +6,7 @@
  */
 class Receiver
 {
-  /**
+    /**
    * @var bool
    */
   private $enableDate = false;
@@ -21,11 +21,11 @@ class Receiver
    */
   public function write($str)
   {
-    if ($this->enableDate) {
-      $str .= ' ['.date('Y-m-d').']';
-    }
+      if ($this->enableDate) {
+          $str .= ' ['.date('Y-m-d').']';
+      }
 
-    $this->output[] = $str;
+      $this->output[] = $str;
   }
 
   /**
@@ -34,7 +34,7 @@ class Receiver
    */
   public function getOutput()
   {
-    return join("\n", $this->output);
+      return join("\n", $this->output);
   }
 
   /**
@@ -42,7 +42,7 @@ class Receiver
    */
   public function enableDate()
   {
-    $this->enableDate = true;
+      $this->enableDate = true;
   }
 
   /**
@@ -50,6 +50,6 @@ class Receiver
    */
   public function disableDate()
   {
-    $this->enableDate = false;
+      $this->enableDate = false;
   }
 }

@@ -6,7 +6,7 @@
  */
 class User implements Role
 {
-  /**
+    /**
    * @var string
    */
   private $name;
@@ -17,7 +17,7 @@ class User implements Role
    */
   public function __construct($name)
   {
-    $this->name = $name;
+      $this->name = $name;
   }
 
   /**
@@ -26,7 +26,7 @@ class User implements Role
    */
   public function getName()
   {
-    return sprintf('User %s', $this->name);
+      return sprintf('User %s', $this->name);
   }
 
   /**
@@ -35,6 +35,6 @@ class User implements Role
    */
   public function accept(RoleVisitorInterface $visitor)
   {
-    $visitor->visitUser($this);
+      $visitor->visitUser($this);
   }
 }

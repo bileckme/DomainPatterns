@@ -6,7 +6,7 @@
  */
 interface RenderableInterface
 {
-  /**
+    /**
    * Render the data
    * @return string
    */

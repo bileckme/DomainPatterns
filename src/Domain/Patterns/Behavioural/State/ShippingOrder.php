@@ -5,18 +5,16 @@
  * Date: 2017/06/15
  * Time: 8:36 AM
  */
-
 namespace Domain\Patterns\Behavioural\State;
-
 
 class ShippingOrder extends StateOrder
 {
-  /**
+    /**
    * ShippingOrder constructor.
    */
   public function __construct()
   {
-    $this->setStatus('shipping');
+      $this->setStatus('shipping');
   }
 
   /**
@@ -24,6 +22,6 @@ class ShippingOrder extends StateOrder
    */
   protected function done()
   {
-    $this->setStatus('completed');
+      $this->setStatus('completed');
   }
 }

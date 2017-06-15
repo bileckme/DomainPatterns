@@ -6,7 +6,7 @@
  */
 class NotSpecification implements SpecificationInterface
 {
-  /**
+    /**
    * @var array
    */
   private $specification;
@@ -17,7 +17,7 @@ class NotSpecification implements SpecificationInterface
    */
   public function __construct(SpecificationInterface $specification)
   {
-    $this->specification = $specification;
+      $this->specification = $specification;
   }
 
   /**
@@ -27,7 +27,7 @@ class NotSpecification implements SpecificationInterface
    */
   public function isSatisfiedBy($item)
   {
-    return !$this->specification->isSatisfiedBy($item);
+      return !$this->specification->isSatisfiedBy($item);
   }
 
   /**
@@ -37,7 +37,7 @@ class NotSpecification implements SpecificationInterface
    */
   public function plus($spec)
   {
-    // TODO: Implement plus() method.
+      // TODO: Implement plus() method.
   }
 
   /**
@@ -47,7 +47,7 @@ class NotSpecification implements SpecificationInterface
    */
   public function either($spec)
   {
-    // TODO: Implement either() method.
+      // TODO: Implement either() method.
   }
 
   /**
@@ -57,6 +57,6 @@ class NotSpecification implements SpecificationInterface
    */
   public function not()
   {
-    // TODO: Implement not() method.
+      // TODO: Implement not() method.
   }
 }

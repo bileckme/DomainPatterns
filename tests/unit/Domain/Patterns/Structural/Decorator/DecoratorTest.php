@@ -11,7 +11,7 @@ use Codeception\TestCase\Test;
  */
 class DecoratorTest extends Test
 {
-  /**
+    /**
    * @var Domain\Patterns\Structural\Decorator\Webservice
    */
   private $service;
@@ -21,7 +21,7 @@ class DecoratorTest extends Test
    */
   protected function _before()
   {
-    $this->service = new Webservice('foobar');
+      $this->service = new Webservice('foobar');
   }
 
   /**
@@ -29,9 +29,9 @@ class DecoratorTest extends Test
    */
   public function testJsonDecorator()
   {
-    $service = new JsonRenderer($this->service);
+      $service = new JsonRenderer($this->service);
 
-    $this->assertEquals('"foobar"', $service->renderData());
+      $this->assertEquals('"foobar"', $service->renderData());
   }
 
   /**
@@ -39,9 +39,9 @@ class DecoratorTest extends Test
    */
   public function testXmlDecorator()
   {
-    $service = new XmlRenderer($this->service);
+      $service = new XmlRenderer($this->service);
 
-    $this->assertXmlStringEqualsXmlString(
+      $this->assertXmlStringEqualsXmlString(
       '<?xml version="1.0"?><content>foobar</content>', $service->renderData()
     );
   }

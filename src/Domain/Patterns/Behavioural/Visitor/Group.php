@@ -6,7 +6,7 @@
  */
 class Group implements Role
 {
-  /**
+    /**
    * @var string
    */
   private $name;
@@ -17,7 +17,7 @@ class Group implements Role
    */
   public function __construct(string $name)
   {
-    $this->name = $name;
+      $this->name = $name;
   }
 
   /**
@@ -26,7 +26,7 @@ class Group implements Role
    */
   public function getName()
   {
-    return sprintf('Group: %s', $this->name);
+      return sprintf('Group: %s', $this->name);
   }
 
   /**
@@ -35,6 +35,6 @@ class Group implements Role
    */
   public function accept(RoleVisitorInterface $visitor)
   {
-    $visitor->visitGroup($this);
+      $visitor->visitGroup($this);
   }
 }

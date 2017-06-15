@@ -6,19 +6,19 @@
  */
 class Memento
 {
-  private $state;
+    private $state;
 
-  public function __construct($state)
-  {
-    $this->setState($state);
-  }
+    public function __construct($state)
+    {
+        $this->setState($state);
+    }
 
   /**
    * @return mixed
    */
   public function getState()
   {
-    return $this->state;
+      return $this->state;
   }
 
   /**
@@ -26,7 +26,6 @@ class Memento
    */
   public function setState($state)
   {
-    $this->state = $state;
+      $this->state = $state;
   }
-
 }

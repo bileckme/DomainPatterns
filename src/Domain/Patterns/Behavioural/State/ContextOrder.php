@@ -6,12 +6,12 @@
  */
 class ContextOrder extends StateOrder
 {
-  /**
+    /**
    * @return StateOrder
    */
   public function getState()
   {
-    return static::$state;
+      return static::$state;
   }
 
   /**
@@ -19,7 +19,7 @@ class ContextOrder extends StateOrder
    */
   public function setState(StateOrder $state)
   {
-    static::$state = $state;
+      static::$state = $state;
   }
 
   /**
@@ -27,7 +27,7 @@ class ContextOrder extends StateOrder
    */
   public function done()
   {
-    static::$state->done();
+      static::$state->done();
   }
 
   /**
@@ -35,6 +35,6 @@ class ContextOrder extends StateOrder
    */
   public function getStatus()
   {
-    return static::$state->getStatus();
+      return static::$state->getStatus();
   }
 }

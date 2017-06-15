@@ -9,7 +9,7 @@
  */
 interface RoleVisitorInterface
 {
-  /**
+    /**
    *
    * @param User $role
    * @return mixed

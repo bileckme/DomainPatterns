@@ -6,7 +6,7 @@
  */
 class PriceSpecification implements SpecificationInterface
 {
-  /**
+    /**
    * @var array
    */
   private $specification;
@@ -26,8 +26,8 @@ class PriceSpecification implements SpecificationInterface
    */
   public function __construct($minPrice, $maxPrice)
   {
-    $this->minPrice = $minPrice;
-    $this->maxPrice = $maxPrice;
+      $this->minPrice = $minPrice;
+      $this->maxPrice = $maxPrice;
   }
 
   /**
@@ -37,15 +37,15 @@ class PriceSpecification implements SpecificationInterface
    */
   public function isSatisfiedBy($item)
   {
-    if ($this->maxPrice !== null && $item->getPrice() > $this->maxPrice) {
-      return false;
-    }
+      if ($this->maxPrice !== null && $item->getPrice() > $this->maxPrice) {
+          return false;
+      }
 
-    if ($this->minPrice !== null && $item->getPrice() < $this->minPrice) {
-      return false;
-    }
+      if ($this->minPrice !== null && $item->getPrice() < $this->minPrice) {
+          return false;
+      }
 
-    return true;
+      return true;
   }
 
   /**
@@ -55,7 +55,7 @@ class PriceSpecification implements SpecificationInterface
    */
   public function plus($spec)
   {
-    // TODO: Implement plus() method.
+      // TODO: Implement plus() method.
   }
 
   /**
@@ -65,7 +65,7 @@ class PriceSpecification implements SpecificationInterface
    */
   public function either($spec)
   {
-    // TODO: Implement either() method.
+      // TODO: Implement either() method.
   }
 
   /**
@@ -75,6 +75,6 @@ class PriceSpecification implements SpecificationInterface
    */
   public function not()
   {
-    // TODO: Implement not() method.
+      // TODO: Implement not() method.
   }
 }

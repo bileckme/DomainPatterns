@@ -6,7 +6,7 @@
  */
 class Webservice implements RenderableInterface
 {
-  /**
+    /**
    * @var string
    */
   private $data;
@@ -17,7 +17,7 @@ class Webservice implements RenderableInterface
    */
   public function __construct($data)
   {
-    $this->data = $data;
+      $this->data = $data;
   }
 
   /**
@@ -26,6 +26,6 @@ class Webservice implements RenderableInterface
    */
   public function renderData()
   {
-    return $this->data;
+      return $this->data;
   }
 }

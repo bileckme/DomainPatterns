@@ -6,7 +6,7 @@
  */
 class Item
 {
-  /**
+    /**
    * @var float
    */
   private $price;
@@ -17,7 +17,7 @@ class Item
    */
   public function __construct($price)
   {
-    $this->price = $price;
+      $this->price = $price;
   }
 
   /**
@@ -25,6 +25,6 @@ class Item
    */
   public function getPrice()
   {
-    return $this->price;
+      return $this->price;
   }
 }

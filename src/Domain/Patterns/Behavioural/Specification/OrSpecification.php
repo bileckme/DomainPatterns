@@ -6,7 +6,7 @@
  */
 class OrSpecification implements SpecificationInterface
 {
-  /**
+    /**
    * @var array
    */
   private $specifications;
@@ -17,7 +17,7 @@ class OrSpecification implements SpecificationInterface
    */
   public function __construct(array $specifications)
   {
-    $this->specifications = $specifications;
+      $this->specifications = $specifications;
   }
 
   /**
@@ -27,12 +27,12 @@ class OrSpecification implements SpecificationInterface
    */
   public function isSatisfiedBy($item)
   {
-    foreach ($this->specifications as $specification) {
-      if ($specification->isSatisfiedBy($item)) {
-        return true;
+      foreach ($this->specifications as $specification) {
+          if ($specification->isSatisfiedBy($item)) {
+              return true;
+          }
       }
-    }
-    return false;
+      return false;
   }
 
   /**
@@ -42,7 +42,7 @@ class OrSpecification implements SpecificationInterface
    */
   public function plus($spec)
   {
-    // TODO: Implement plus() method.
+      // TODO: Implement plus() method.
   }
 
   /**
@@ -52,7 +52,7 @@ class OrSpecification implements SpecificationInterface
    */
   public function either($spec)
   {
-    // TODO: Implement either() method.
+      // TODO: Implement either() method.
   }
 
   /**
@@ -62,6 +62,6 @@ class OrSpecification implements SpecificationInterface
    */
   public function not()
   {
-    // TODO: Implement not() method.
+      // TODO: Implement not() method.
   }
 }

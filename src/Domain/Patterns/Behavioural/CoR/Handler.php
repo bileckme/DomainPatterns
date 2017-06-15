@@ -1,6 +1,7 @@
 <?php namespace Domain\Patterns\Behavioural\CoR;
 
 use Domain\Patterns\Behavioural\CoR\RequestInterface as Request;
+
 /**
  * Class Handler
  * @package Domain\Patterns\Behavioural\CoR
@@ -12,11 +13,10 @@ abstract class Handler
    */
   private $successor = null;
 
-  public function __construct(Handler $handler = null)
-  {
-
-    $this->successor = $handler;
-  }
+    public function __construct(Handler $handler = null)
+    {
+        $this->successor = $handler;
+    }
 
   /**
    * Sets a successor handler,

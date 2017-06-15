@@ -6,7 +6,7 @@
  */
 class RoleVisitor implements RoleVisitorInterface
 {
-  /**
+    /**
    * @var Role[]
    */
   private $visited = [];
@@ -16,7 +16,7 @@ class RoleVisitor implements RoleVisitorInterface
    */
   public function visitGroup(Group $role)
   {
-    $this->visited[] = $role;
+      $this->visited[] = $role;
   }
 
   /**
@@ -24,7 +24,7 @@ class RoleVisitor implements RoleVisitorInterface
    */
   public function visitUser(User $role)
   {
-    $this->visited[] = $role;
+      $this->visited[] = $role;
   }
 
   /**
@@ -32,6 +32,6 @@ class RoleVisitor implements RoleVisitorInterface
    */
   public function getVisited()
   {
-    return $this->visited;
+      return $this->visited;
   }
 }

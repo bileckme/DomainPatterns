@@ -5,7 +5,6 @@
  * Date: 2017/06/14
  * Time: 1:34 PM
  */
-
 namespace Domain\Patterns\Structural\Decorator;
 
 class XmlRenderer extends RendererDecorator
@@ -17,10 +16,10 @@ class XmlRenderer extends RendererDecorator
    */
   public function renderData()
   {
-    $document = new \DOMDocument();
-    $data = $this->wrapped->renderData();
-    $document->appendChild($document->createElement('content', $data));
+      $document = new \DOMDocument();
+      $data = $this->wrapped->renderData();
+      $document->appendChild($document->createElement('content', $data));
 
-    return $document->saveXML();
+      return $document->saveXML();
   }
 }

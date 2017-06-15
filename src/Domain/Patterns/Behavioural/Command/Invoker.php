@@ -6,7 +6,7 @@
  */
 class Invoker
 {
-  /**
+    /**
    * @var CommandInterface
    */
   private $command;
@@ -19,7 +19,7 @@ class Invoker
    */
   public function setCommand(CommandInterface $cmd)
   {
-    $this->command = $cmd;
+      $this->command = $cmd;
   }
 
   /**
@@ -27,6 +27,6 @@ class Invoker
    */
   public function run()
   {
-    $this->command->execute();
+      $this->command->execute();
   }
 }

@@ -6,12 +6,12 @@
  */
 abstract class StateOrder
 {
-  /**
+    /**
    * @var array
    */
   private $details;
 
-  protected static $state;
+    protected static $state;
 
   /**
    * @return mixed
@@ -23,8 +23,8 @@ abstract class StateOrder
    */
   protected function setStatus($status)
   {
-    $this->details['status'] = $status;
-    $this->details['updatedTime'] = time();
+      $this->details['status'] = $status;
+      $this->details['updatedTime'] = time();
   }
 
   /**
@@ -32,7 +32,6 @@ abstract class StateOrder
    */
   protected function getStatus()
   {
-    return $this->details['status'];
+      return $this->details['status'];
   }
-
 }

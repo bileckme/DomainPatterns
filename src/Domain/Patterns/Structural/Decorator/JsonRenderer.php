@@ -13,6 +13,6 @@ class JsonRenderer extends RendererDecorator
    */
   public function renderData()
   {
-    return json_encode($this->wrapped->renderData());
+      return json_encode($this->wrapped->renderData());
   }
 }

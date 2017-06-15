@@ -6,18 +6,19 @@
  */
 class Originator
 {
-  private $state;
+    private $state;
 
-  public function setMemento(Memento $state){
-    $this->setState($state);
-  }
+    public function setMemento(Memento $state)
+    {
+        $this->setState($state);
+    }
 
   /**
    * @return mixed
    */
   public function createMemento($state)
   {
-    return new Memento($state);
+      return new Memento($state);
   }
 
   /**
@@ -25,7 +26,7 @@ class Originator
    */
   public function getState()
   {
-    return $this->state;
+      return $this->state;
   }
 
   /**
@@ -33,8 +34,6 @@ class Originator
    */
   public function setState($state)
   {
-    $this->state = $state;
+      $this->state = $state;
   }
-
-
 }

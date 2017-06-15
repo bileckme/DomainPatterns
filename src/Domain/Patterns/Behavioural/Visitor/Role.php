@@ -6,7 +6,7 @@
  */
 interface Role
 {
-  /**
+    /**
    * @param RoleVisitorInterface $visitor
    * @return mixed
    */

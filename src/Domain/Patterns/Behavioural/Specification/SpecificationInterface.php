@@ -34,5 +34,4 @@ interface SpecificationInterface
    * @return mixed
    */
   public function not();
-
 }

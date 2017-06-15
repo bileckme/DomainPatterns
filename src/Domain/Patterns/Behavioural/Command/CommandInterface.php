@@ -6,7 +6,7 @@
  */
 interface CommandInterface
 {
-  /**
+    /**
    * Execute command
    * @return mixed
    */

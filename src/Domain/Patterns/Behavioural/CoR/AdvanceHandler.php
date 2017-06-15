@@ -1,13 +1,14 @@
 <?php namespace Domain\Patterns\Behavioural\CoR;
 
 use Domain\Patterns\Behavioural\CoR\RequestInterface as Request;
+
 /**
  * Class AdvanceHandler
  * @package Domain\Patterns\Behavioural\CoR
  */
 abstract class AdvancedHandler
 {
-  /**
+    /**
    * @var
    */
   protected $cache;

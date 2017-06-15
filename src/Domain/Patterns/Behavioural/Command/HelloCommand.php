@@ -4,7 +4,7 @@ use Domain\Patterns\Behavioural\Command\CommandInterface;
 
 class HelloCommand implements CommandInterface
 {
-  /**
+    /**
    * @var Receiver
    */
   private $output;
@@ -15,6 +15,6 @@ class HelloCommand implements CommandInterface
    */
   public function execute()
   {
-    $this->output->write('Hello World');
+      $this->output->write('Hello World');
   }
 }

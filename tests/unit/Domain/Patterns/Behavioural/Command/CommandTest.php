@@ -11,7 +11,7 @@ use Codeception\TestCase\Test;
  */
 class CommandTest extends Test
 {
-  /**
+    /**
    * @var Invoker
    */
   protected $invoker;
@@ -26,8 +26,8 @@ class CommandTest extends Test
    */
   public function __before()
   {
-    $this->invoker = new Invoker();
-    $this->receiver = new Receiver();
+      $this->invoker = new Invoker();
+      $this->receiver = new Receiver();
   }
 
   /**
@@ -35,13 +35,12 @@ class CommandTest extends Test
    */
   protected function _after()
   {
-
   }
 
-  public function testInvocation()
-  {
-    $this->invoker->setCommand(new HelloCommand($this->receiver));
-    $this->invoker->run();
-    $this->assertEquals('Hello World', $this->receiver->getOutput());
-  }
+    public function testInvocation()
+    {
+        $this->invoker->setCommand(new HelloCommand($this->receiver));
+        $this->invoker->run();
+        $this->assertEquals('Hello World', $this->receiver->getOutput());
+    }
 }

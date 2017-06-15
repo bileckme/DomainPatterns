@@ -12,22 +12,22 @@ use Domain\Patterns\Tests\Test;
  */
 class VisitorTest extends Test
 {
-  /**
+    /**
    * @var RoleVisitor
    */
   private $visitor;
 
-  protected function setUp()
-  {
-    $this->visitor = new RoleVisitor();
-  }
+    protected function setUp()
+    {
+        $this->visitor = new RoleVisitor();
+    }
 
   /**
    * @return array
    */
   public function provideRoles()
   {
-    return [
+      return [
       [new User('Biyi')],
       [new Group('Administrators')],
     ];
@@ -40,7 +40,7 @@ class VisitorTest extends Test
    */
   public function testVisitSomeRole(Role $role)
   {
-    $role->accept($this->visitor);
-    $this->assertSame($role, $this->visitor->getVisited()[0]);
+      $role->accept($this->visitor);
+      $this->assertSame($role, $this->visitor->getVisited()[0]);
   }
 }
