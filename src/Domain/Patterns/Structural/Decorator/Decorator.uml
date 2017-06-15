@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Structural\Decorator\JsonRenderer</OriginalElement>
+  <nodes>
+    <node x="209.0" y="104.0">\Domain\Patterns\Structural\Decorator\Webservice</node>
+    <node x="134.5" y="3.0">\Domain\Patterns\Structural\Decorator\RenderableInterface</node>
+    <node x="125.0" y="248.0">\Domain\Patterns\Structural\Decorator\JsonRenderer</node>
+    <node x="47.0" y="103.0">\Domain\Patterns\Structural\Decorator\RendererDecorator</node>
+    <node x="-8.0" y="248.0">\Domain\Patterns\Structural\Decorator\XmlRenderer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\Domain\Patterns\Structural\Decorator\Webservice" target="\Domain\Patterns\Structural\Decorator\RenderableInterface">
+      <point x="0.0" y="-48.5" />
+      <point x="275.0" y="76.0" />
+      <point x="229.75" y="76.0" />
+      <point x="30.75" y="25.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Structural\Decorator\JsonRenderer" target="\Domain\Patterns\Structural\Decorator\RendererDecorator">
+      <point x="0.0" y="-25.5" />
+      <point x="189.5" y="223.0" />
+      <point x="156.0" y="223.0" />
+      <point x="33.0" y="37.0" />
+    </edge>
+    <edge source="\Domain\Patterns\Structural\Decorator\XmlRenderer" target="\Domain\Patterns\Structural\Decorator\RendererDecorator">
+      <point x="0.0" y="-25.5" />
+      <point x="56.5" y="223.0" />
+      <point x="90.0" y="223.0" />
+      <point x="-33.0" y="37.0" />
+    </edge>
+    <edge source="\Domain\Patterns\Structural\Decorator\RendererDecorator" target="\Domain\Patterns\Structural\Decorator\RenderableInterface">
+      <point x="0.0" y="-37.0" />
+      <point x="123.0" y="76.0" />
+      <point x="168.25" y="76.0" />
+      <point x="-30.75" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="132.0" y="153.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

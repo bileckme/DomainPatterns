@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Behavioural\Command\CommandInterface</OriginalElement>
+  <nodes>
+    <node x="222.0" y="1.0">\Domain\Patterns\Behavioural\Command\Receiver</node>
+    <node x="0.0" y="101.0">\Domain\Patterns\Behavioural\Command\HelloCommand</node>
+    <node x="0.0" y="220.0">\Domain\Patterns\Behavioural\Command\Invoker</node>
+    <node x="2.5" y="0.0">\Domain\Patterns\Behavioural\Command\CommandInterface</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\Domain\Patterns\Behavioural\Command\HelloCommand" target="\Domain\Patterns\Behavioural\Command\CommandInterface">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="110.5" y="151.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

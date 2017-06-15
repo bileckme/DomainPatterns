@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Behavioural\State\ContextOrder</OriginalElement>
+  <nodes>
+    <node x="165.5" y="0.0">\Domain\Patterns\Behavioural\State\StateOrder</node>
+    <node x="352.0" y="211.5">\Domain\Patterns\Behavioural\State\CreateOrder</node>
+    <node x="180.0" y="211.5">\Domain\Patterns\Behavioural\State\ShippingOrder</node>
+    <node x="0.0" y="190.0">\Domain\Patterns\Behavioural\State\ContextOrder</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\Domain\Patterns\Behavioural\State\ContextOrder" target="\Domain\Patterns\Behavioural\State\StateOrder">
+      <point x="0.0" y="-58.5" />
+      <point x="80.0" y="165.0" />
+      <point x="195.66666666666666" y="165.0" />
+      <point x="-60.33333333333334" y="70.0" />
+    </edge>
+    <edge source="\Domain\Patterns\Behavioural\State\ShippingOrder" target="\Domain\Patterns\Behavioural\State\StateOrder">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="\Domain\Patterns\Behavioural\State\CreateOrder" target="\Domain\Patterns\Behavioural\State\StateOrder">
+      <point x="0.0" y="-37.0" />
+      <point x="428.0" y="165.0" />
+      <point x="316.33333333333337" y="165.0" />
+      <point x="60.33333333333334" y="70.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="161.0" y="174.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constants</Category>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

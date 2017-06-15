@@ -13,6 +13,15 @@ abstract class RendererDecorator implements RenderableInterface
 
     public function __construct(RenderableInterface $renderer)
     {
-      $this->wrapped = $renderer;
+        $this->wrapped = $renderer;
+    }
+
+    /**
+     * Render the data
+     * @return string
+     */
+    public function renderData()
+    {
+        return $this->wrapped;
     }
 }
