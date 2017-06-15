@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Behavioural\Strategy\ArrayOutput</OriginalElement>
+  <nodes>
+    <node x="152.0" y="225.0">\Domain\Patterns\Behavioural\Strategy\SerializedArrayOutput</node>
+    <node x="304.0" y="225.0">\Domain\Patterns\Behavioural\Strategy\ArrayOutput</node>
+    <node x="162.0" y="101.0">\Domain\Patterns\Behavioural\Strategy\BaseOutput</node>
+    <node x="165.0" y="0.0">\Domain\Patterns\Behavioural\Strategy\OutputInterface</node>
+    <node x="0.0" y="366.0">\Domain\Patterns\Behavioural\Strategy\Client</node>
+    <node x="0.0" y="225.0">\Domain\Patterns\Behavioural\Strategy\JsonStringOutput</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\Domain\Patterns\Behavioural\Strategy\SerializedArrayOutput" target="\Domain\Patterns\Behavioural\Strategy\BaseOutput">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="\Domain\Patterns\Behavioural\Strategy\BaseOutput" target="\Domain\Patterns\Behavioural\Strategy\OutputInterface">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Behavioural\Strategy\JsonStringOutput" target="\Domain\Patterns\Behavioural\Strategy\BaseOutput">
+      <point x="0.0" y="-48.0" />
+      <point x="66.0" y="200.0" />
+      <point x="180.66666666666666" y="200.0" />
+      <point x="-37.33333333333334" y="37.0" />
+    </edge>
+    <edge source="\Domain\Patterns\Behavioural\Strategy\ArrayOutput" target="\Domain\Patterns\Behavioural\Strategy\BaseOutput">
+      <point x="0.0" y="-48.0" />
+      <point x="370.0" y="200.0" />
+      <point x="255.33333333333334" y="200.0" />
+      <point x="37.33333333333334" y="37.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="188.0" y="151.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constants</Category>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

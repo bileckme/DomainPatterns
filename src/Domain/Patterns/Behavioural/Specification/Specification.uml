@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Behavioural\Specification\AbstractSpecification</OriginalElement>
+  <nodes>
+    <node x="653.0" y="185.0">\Domain\Patterns\Behavioural\Specification\OrSpecification</node>
+    <node x="905.0" y="185.0">\Domain\Patterns\Behavioural\Specification\AndSpecification</node>
+    <node x="411.0" y="-4.0">\Domain\Patterns\Behavioural\Specification\SpecificationInterface</node>
+    <node x="401.0" y="185.0">\Domain\Patterns\Behavioural\Specification\AbstractSpecification</node>
+    <node x="0.0" y="419.0">\Domain\Patterns\Behavioural\Specification\Item</node>
+    <node x="153.00000000000006" y="185.0">\Domain\Patterns\Behavioural\Specification\NotSpecification</node>
+    <node x="-118.0" y="163.0">\Domain\Patterns\Behavioural\Specification\PriceSpecification</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\Domain\Patterns\Behavioural\Specification\OrSpecification" target="\Domain\Patterns\Behavioural\Specification\SpecificationInterface">
+      <point x="0.0" y="-81.5" />
+      <point x="769.0" y="143.0" />
+      <point x="559.4000000000001" y="143.0" />
+      <point x="42.40000000000009" y="58.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Behavioural\Specification\AbstractSpecification" target="\Domain\Patterns\Behavioural\Specification\SpecificationInterface">
+      <point x="0.0" y="-81.5" />
+      <point x="0.0" y="58.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Behavioural\Specification\NotSpecification" target="\Domain\Patterns\Behavioural\Specification\SpecificationInterface">
+      <point x="0.0" y="-81.5" />
+      <point x="267.00000000000006" y="143.0" />
+      <point x="474.60000000000014" y="143.0" />
+      <point x="-42.39999999999998" y="58.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Behavioural\Specification\AndSpecification" target="\Domain\Patterns\Behavioural\Specification\SpecificationInterface">
+      <point x="0.0" y="-81.5" />
+      <point x="1021.0" y="133.0" />
+      <point x="601.8000000000002" y="133.0" />
+      <point x="84.80000000000007" y="58.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Behavioural\Specification\PriceSpecification" target="\Domain\Patterns\Behavioural\Specification\SpecificationInterface">
+      <point x="0.0" y="-103.5" />
+      <point x="7.5" y="133.0" />
+      <point x="432.20000000000005" y="133.0" />
+      <point x="-84.79999999999995" y="58.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="514.0" y="198.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Constants</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
