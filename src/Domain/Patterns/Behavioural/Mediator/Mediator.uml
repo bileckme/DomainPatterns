@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Behavioural\Mediator\Subsystem\Database</OriginalElement>
+  <nodes>
+    <node x="206.5" y="79.0">\Domain\Patterns\Behavioural\Mediator\Colleague</node>
+    <node x="245.0" y="259.0">\Domain\Patterns\Behavioural\Mediator\Subsystem\Server</node>
+    <node x="361.0" y="259.0">\Domain\Patterns\Behavioural\Mediator\Subsystem\Database</node>
+    <node x="-311.0" y="13.0">\Domain\Patterns\Behavioural\Mediator\MediatorInterface</node>
+    <node x="-320.0" y="158.0">\Domain\Patterns\Behavioural\Mediator\Mediator</node>
+    <node x="109.0" y="248.0">\Domain\Patterns\Behavioural\Mediator\Subsystem\Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\Domain\Patterns\Behavioural\Mediator\Subsystem\Server" target="\Domain\Patterns\Behavioural\Mediator\Colleague">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Behavioural\Mediator\Subsystem\Client" target="\Domain\Patterns\Behavioural\Mediator\Colleague">
+      <point x="0.0" y="-36.5" />
+      <point x="167.0" y="223.0" />
+      <point x="235.33333333333334" y="223.0" />
+      <point x="-57.666666666666664" y="59.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Behavioural\Mediator\Subsystem\Database" target="\Domain\Patterns\Behavioural\Mediator\Colleague">
+      <point x="0.0" y="-25.5" />
+      <point x="410.0" y="223.0" />
+      <point x="350.66666666666663" y="223.0" />
+      <point x="57.66666666666666" y="59.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Behavioural\Mediator\Mediator" target="\Domain\Patterns\Behavioural\Mediator\MediatorInterface">
+      <point x="0.0" y="-92.5" />
+      <point x="0.0" y="47.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="116.0" y="230.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
