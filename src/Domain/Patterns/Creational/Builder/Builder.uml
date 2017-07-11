@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Creational\Builder\Bike</OriginalElement>
+  <nodes>
+    <node x="-67.24576009215224" y="-25.996462947175225">\Domain\Patterns\Creational\Builder\Vehicle</node>
+    <node x="105.64991800024717" y="-23.880218535848847">\Domain\Patterns\Creational\Builder\Director</node>
+    <node x="-390.31280931586605" y="-25.98682678311502">\Domain\Patterns\Creational\Builder\BuilderInterface</node>
+    <node x="-36.24576009215224" y="98.00353705282478">\Domain\Patterns\Creational\Builder\Bike</node>
+    <node x="33.75423990784776" y="98.00353705282478">\Domain\Patterns\Creational\Builder\Car</node>
+    <node x="105.0" y="594.0">\Domain\Patterns\Creational\Builder\Parts\Door</node>
+    <node x="-168.31280931586605" y="163.01317321688498">\Domain\Patterns\Creational\Builder\BikeBuilder</node>
+    <node x="-374.31280931586605" y="163.01317321688498">\Domain\Patterns\Creational\Builder\CarBuilder</node>
+    <node x="-590.312809315866" y="163.01317321688498">\Domain\Patterns\Creational\Builder\TruckBuilder</node>
+    <node x="0.0" y="594.0">\Domain\Patterns\Creational\Builder\Parts\Wheel</node>
+    <node x="95.30416539219942" y="97.80383511541793">\Domain\Patterns\Creational\Builder\Parts\Engine</node>
+    <node x="-113.24576009215224" y="98.00353705282478">\Domain\Patterns\Creational\Builder\Truck</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\Domain\Patterns\Creational\Builder\Car" target="\Domain\Patterns\Creational\Builder\Vehicle">
+      <point x="0.0" y="-14.5" />
+      <point x="57.25423990784776" y="73.00353705282478" />
+      <point x="26.087573241181104" y="73.00353705282478" />
+      <point x="37.33333333333334" y="37.0" />
+    </edge>
+    <edge source="\Domain\Patterns\Creational\Builder\Bike" target="\Domain\Patterns\Creational\Builder\Vehicle">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="\Domain\Patterns\Creational\Builder\CarBuilder" target="\Domain\Patterns\Creational\Builder\BuilderInterface">
+      <point x="0.0" y="-81.0" />
+      <point x="0.0" y="69.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Creational\Builder\Truck" target="\Domain\Patterns\Creational\Builder\Vehicle">
+      <point x="0.0" y="-14.5" />
+      <point x="-84.74576009215224" y="73.00353705282478" />
+      <point x="-48.57909342548558" y="73.00353705282478" />
+      <point x="-37.33333333333334" y="37.0" />
+    </edge>
+    <edge source="\Domain\Patterns\Creational\Builder\TruckBuilder" target="\Domain\Patterns\Creational\Builder\BuilderInterface">
+      <point x="0.0" y="-81.0" />
+      <point x="-492.31280931586605" y="138.01317321688498" />
+      <point x="-353.97947598253273" y="138.01317321688498" />
+      <point x="-72.66666666666669" y="69.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Creational\Builder\BikeBuilder" target="\Domain\Patterns\Creational\Builder\BuilderInterface">
+      <point x="0.0" y="-81.0" />
+      <point x="-73.31280931586605" y="138.01317321688498" />
+      <point x="-208.64614264919936" y="138.01317321688498" />
+      <point x="72.66666666666669" y="69.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9450704225352112" x="-83.86885245901635" y="88.2935916542474" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constants</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
