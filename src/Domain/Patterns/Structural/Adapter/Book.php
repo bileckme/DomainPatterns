@@ -1,13 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: biyi
- * Date: 2017/07/14
- * Time: 3:27 PM
- */
-
-namespace Domain\Patterns\Structural\Adapter;
-
+<?php namespace Domain\Patterns\Structural\Adapter;
 
 class Book implements BookInterface
 {
