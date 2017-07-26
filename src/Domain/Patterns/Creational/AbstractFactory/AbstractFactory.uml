@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Creational\AbstractFactory\AbstractFactory</OriginalElement>
+  <nodes>
+    <node x="-210.0" y="-25.0">\Domain\Patterns\Creational\AbstractFactory\HtmlFactory</node>
+    <node x="146.5" y="-124.0">\Domain\Patterns\Creational\AbstractFactory\Text</node>
+    <node x="211.0" y="0.0">\Domain\Patterns\Creational\AbstractFactory\HtmlText</node>
+    <node x="119.0" y="0.0">\Domain\Patterns\Creational\AbstractFactory\JsonText</node>
+    <node x="-375.0" y="-25.0">\Domain\Patterns\Creational\AbstractFactory\JsonFactory</node>
+    <node x="-292.5" y="-126.0">\Domain\Patterns\Creational\AbstractFactory\AbstractFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\Domain\Patterns\Creational\AbstractFactory\JsonFactory" target="\Domain\Patterns\Creational\AbstractFactory\AbstractFactory">
+      <point x="0.0" y="-25.5" />
+      <point x="-302.5" y="-50.0" />
+      <point x="-256.25" y="-50.0" />
+      <point x="-36.25" y="25.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Creational\AbstractFactory\HtmlText" target="\Domain\Patterns\Creational\AbstractFactory\Text">
+      <point x="0.0" y="-14.5" />
+      <point x="248.0" y="-25.0" />
+      <point x="229.0" y="-25.0" />
+      <point x="27.5" y="37.0" />
+    </edge>
+    <edge source="\Domain\Patterns\Creational\AbstractFactory\HtmlFactory" target="\Domain\Patterns\Creational\AbstractFactory\AbstractFactory">
+      <point x="0.0" y="-25.5" />
+      <point x="-137.5" y="-50.0" />
+      <point x="-183.75" y="-50.0" />
+      <point x="36.25" y="25.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Creational\AbstractFactory\JsonText" target="\Domain\Patterns\Creational\AbstractFactory\Text">
+      <point x="0.0" y="-14.5" />
+      <point x="155.0" y="-25.0" />
+      <point x="174.0" y="-25.0" />
+      <point x="-27.5" y="37.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="98.0" y="130.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
