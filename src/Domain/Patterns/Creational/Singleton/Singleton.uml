@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Creational\Singleton\Singleton</OriginalElement>
+  <nodes>
+    <node x="-253.0" y="-101.0">\Domain\Patterns\Creational\Singleton\Singleton</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="37.5" y="14.5" />
+  <SelectedNodes>
+    <node>\Domain\Patterns\Creational\Singleton\Singleton</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constants</Category>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
