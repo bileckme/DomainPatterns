@@ -4,7 +4,7 @@
  * Class CharacterFlyweight
  * @package Domain\Patterns\Flyweight\Flyweight
  */
-class CharacterFlyweight
+class CharacterFlyweight implements FlyweightInterface
 {
     /**
      * Any state stored by the concrete flyweight must be independent of its context.
