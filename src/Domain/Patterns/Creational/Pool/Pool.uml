@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Creational\Pool\StringReverseWorker</OriginalElement>
+  <nodes>
+    <node x="-233.0" y="15.0">\Domain\Patterns\Creational\Pool\StringReverseWorker</node>
+    <node x="0.0" y="0.0">\Domain\Patterns\Creational\Pool\WorkerPool</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="63.5" y="72.0" />
+  <SelectedNodes>
+    <node>\Domain\Patterns\Creational\Pool\StringReverseWorker</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constants</Category>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
