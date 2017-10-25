@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Other\EAV\Attribute</OriginalElement>
+  <nodes>
+    <node x="413.5" y="0.0">\Domain\Patterns\Other\EAV\ValueInterface</node>
+    <node x="173.0" y="145.0">\Domain\Patterns\Other\EAV\Entity</node>
+    <node x="391.0" y="123.0">\Domain\Patterns\Other\EAV\Value</node>
+    <node x="93.5" y="0.0">\Domain\Patterns\Other\EAV\ValueAccessInterface</node>
+    <node x="0.0" y="145.0">\Domain\Patterns\Other\EAV\Attribute</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\Domain\Patterns\Other\EAV\Entity" target="\Domain\Patterns\Other\EAV\ValueAccessInterface">
+      <point x="0.0" y="-92.5" />
+      <point x="267.5" y="120.0" />
+      <point x="210.25" y="120.0" />
+      <point x="36.25" y="47.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Other\EAV\Attribute" target="\Domain\Patterns\Other\EAV\ValueAccessInterface">
+      <point x="0.0" y="-92.5" />
+      <point x="80.5" y="120.0" />
+      <point x="137.75" y="120.0" />
+      <point x="-36.25" y="47.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Other\EAV\Value" target="\Domain\Patterns\Other\EAV\ValueInterface">
+      <point x="0.0" y="-81.5" />
+      <point x="0.0" y="36.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="76.0" y="231.0" />
+  <SelectedNodes>
+    <node>\Domain\Patterns\Other\EAV\Attribute</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
