@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Other\Delegation\JuniorDeveloper</OriginalElement>
+  <nodes>
+    <node x="-196.0" y="7.0">\Domain\Patterns\Other\Delegation\JuniorDeveloper</node>
+    <node x="0.0" y="0.0">\Domain\Patterns\Other\Delegation\TeamLead</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="53.5" y="51.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
