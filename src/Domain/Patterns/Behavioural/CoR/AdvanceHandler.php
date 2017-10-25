@@ -6,7 +6,7 @@ use Domain\Patterns\Behavioural\CoR\RequestInterface as Request;
  * Class AdvanceHandler
  * @package Domain\Patterns\Behavioural\CoR
  */
-abstract class AdvancedHandler
+abstract class AdvanceHandler
 {
     /**
    * @var

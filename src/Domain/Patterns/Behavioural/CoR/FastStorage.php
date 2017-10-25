@@ -1,15 +1,11 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: biyi
- * Date: 2017/06/14
- * Time: 3:04 PM
- */
-namespace Domain\Patterns\Behavioural\CoR;
+<?php namespace Domain\Patterns\Behavioural\CoR;
 
-//use \Guzzle\Http\Message\Request;
 use Domain\Patterns\Behavioural\CoR\RequestInterface as Request;
 
+/**
+ * Class FastStorage
+ * @package Domain\Patterns\Behavioural\CoR
+ */
 class FastStorage extends Handler
 {
 
@@ -18,6 +14,10 @@ class FastStorage extends Handler
    */
   protected $data;
 
+    /**
+     * FastStorage constructor.
+     * @param Handler $data
+     */
     public function __construct($data)
     {
         $this->data = $data;

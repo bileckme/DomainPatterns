@@ -1,14 +1,11 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: biyi
- * Date: 2017/06/14
- * Time: 3:02 PM
- */
-namespace Domain\Patterns\Behavioural\CoR;
+<?php namespace Domain\Patterns\Behavioural\CoR;
 
 use Domain\Patterns\Behavioural\CoR\RequestInterface as Request;
 
+/**
+ * Class SlowStorage
+ * @package Domain\Patterns\Behavioural\CoR
+ */
 class SlowStorage extends Handler
 {
     /**

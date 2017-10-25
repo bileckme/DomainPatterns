@@ -13,6 +13,10 @@ abstract class Handler
    */
   private $successor = null;
 
+    /**
+     * Handler constructor.
+     * @param Handler|null $handler
+     */
     public function __construct(Handler $handler = null)
     {
         $this->successor = $handler;
