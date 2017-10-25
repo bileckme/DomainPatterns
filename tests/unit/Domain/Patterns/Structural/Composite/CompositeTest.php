@@ -11,6 +11,9 @@ use PHPUnit_Framework_TestCase as TestCase;
  */
 class CompositeTest extends TestCase
 {
+    /**
+     * Test render method
+     */
     public function testRender()
     {
         $form = new Form();

@@ -6,7 +6,7 @@
     <node x="-80.0" y="-59.0">\Domain\Patterns\Structural\Composite\TextElement</node>
     <node x="70.0" y="-58.5">\Domain\Patterns\Structural\Composite\Form</node>
     <node x="-76.5" y="-160.0">\Domain\Patterns\Structural\Composite\RenderableInterface</node>
-    <node x="-201.0" y="-55.0">\Domain\Patterns\Structural\Composite\InputElement</node>
+    <node x="-194.0" y="-58.0">\Domain\Patterns\Structural\Composite\InputElement</node>
   </nodes>
   <notes />
   <edges>
@@ -28,7 +28,9 @@
     </edge>
   </edges>
   <settings layout="Hierarchic Group" zoom="1.0" x="140.0" y="-45.0" />
-  <SelectedNodes />
+  <SelectedNodes>
+    <node>\Domain\Patterns\Structural\Composite\InputElement</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
     <Category>Constants</Category>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\Domain\Patterns\Creational\FactoryMethod\Bicycle</OriginalElement>
+  <nodes>
+    <node x="28.0" y="-118.0">\Domain\Patterns\Creational\FactoryMethod\CarFerrari</node>
+    <node x="332.0" y="-129.0">\Domain\Patterns\Creational\FactoryMethod\CarMercedes</node>
+    <node x="180.0" y="-118.0">\Domain\Patterns\Creational\FactoryMethod\Bicycle</node>
+    <node x="-170.0" y="-92.0">\Domain\Patterns\Creational\FactoryMethod\ItalianFactory</node>
+    <node x="180.0" y="-230.0">\Domain\Patterns\Creational\FactoryMethod\VehicleInterface</node>
+    <node x="-245.25" y="-238.0">\Domain\Patterns\Creational\FactoryMethod\FactoryMethod</node>
+    <node x="-292.0" y="-92.0">\Domain\Patterns\Creational\FactoryMethod\GermanFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\Domain\Patterns\Creational\FactoryMethod\CarFerrari" target="\Domain\Patterns\Creational\FactoryMethod\VehicleInterface">
+      <point x="0.0" y="-25.5" />
+      <point x="94.0" y="-154.0" />
+      <point x="202.0" y="-154.0" />
+      <point x="-44.0" y="25.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Creational\FactoryMethod\Bicycle" target="\Domain\Patterns\Creational\FactoryMethod\VehicleInterface">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Creational\FactoryMethod\ItalianFactory" target="\Domain\Patterns\Creational\FactoryMethod\FactoryMethod">
+      <point x="0.0" y="-14.5" />
+      <point x="-123.5" y="-117.0" />
+      <point x="-150.75" y="-117.0" />
+      <point x="31.5" y="48.0" />
+    </edge>
+    <edge source="\Domain\Patterns\Creational\FactoryMethod\CarMercedes" target="\Domain\Patterns\Creational\FactoryMethod\VehicleInterface">
+      <point x="0.0" y="-36.5" />
+      <point x="406.0" y="-154.0" />
+      <point x="290.0" y="-154.0" />
+      <point x="44.0" y="25.5" />
+    </edge>
+    <edge source="\Domain\Patterns\Creational\FactoryMethod\GermanFactory" target="\Domain\Patterns\Creational\FactoryMethod\FactoryMethod">
+      <point x="0.0" y="-14.5" />
+      <point x="-241.0" y="-117.0" />
+      <point x="-213.75" y="-117.0" />
+      <point x="-31.5" y="48.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="147.5" y="-89.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Constants</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
